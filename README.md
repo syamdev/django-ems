@@ -518,7 +518,6 @@ INSTALLED_APPS = [
 ## URL Configurations & Response Views
 
 ### Django URLs Views
-menit 2:39
 
 ### Function Based Views
 - Manual from your own
