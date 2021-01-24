@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_ems.apps.AppEmsConfig',
     'app_feedback.apps.AppFeedbackConfig',
+    'materializecssform',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+# syam
+PROJECT_DIR = Path(__file__).resolve().parent.parent.parent
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static')
+]
+
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'static/images')
+
+MEDIA_URL = '/images/'

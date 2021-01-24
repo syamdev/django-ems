@@ -630,3 +630,10 @@ from django.views.generic import TemplateView, ListView, DetailView, CreateView,
 - employees/profile/create/ : create profile
 - employees/<emp_no>/profile/update/ : update profile
 - employees/<emp_no>/profile/delete/ : delete profile
+
+
+## Django Templates
+
+- Using parallax template: https://materializecss.com/getting-started.html#templates
+- Implement template to each view
+- Install: ` pip install  django-materializecss-form ` 

@@ -1,15 +1,26 @@
-<h3>Profile</h3>
-<table>
-    <tr>
-        <td width="50%"><strong>Emp No</strong></td>
-        <td width="50%">{{object.emp_no}}</td>
-    </tr>
-    <tr>
-        <td>Name</td>
-        <td>{{object.first_name}} {{object.last_name}}</td>
-    </tr>
-    <tr>
-        <td>Gender</td>
-        <td>{{object.gender}}</td>
-    </tr>
-</table>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load materializecss %}
+
+{% block content %}
+<div class="container">
+    <h3>Profile</h3>
+    <table style="margin: 60px 0;">
+        <tr>
+            <td width="50%"><strong>Emp No</strong></td>
+            <td width="50%">{{object.emp_no}}</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>{{object.first_name}} {{object.last_name}}</td>
+        </tr>
+        <tr>
+            <td><strong>Gender</strong></td>
+            <td>{{object.gender}}</td>
+        </tr>
+    </table>
+
+</div>
+{% endblock %}

@@ -1,6 +1,14 @@
-<h3>Create Profile</h3>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
-</form>
+{% extends 'base.html' %}
+
+{% load materializecss %}
+
+{% block content %}
+<div class="container">
+    <h3>Create Profile</h3>
+    <form method="post" style="margin: 60px 0;">
+        {% csrf_token %}
+        {{ form|materializecss }}
+        <input class="waves-effect waves-light btn" type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
